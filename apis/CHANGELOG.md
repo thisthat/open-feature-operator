@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.40](https://github.com/thisthat/open-feature-operator/compare/apis/v0.2.39...apis/v0.2.40) (2023-11-14)
+
+
+### ✨ New Features
+
+* add go-mod ([f8726f1](https://github.com/thisthat/open-feature-operator/commit/f8726f1f5db056680295e90419ccd20f4bc0a954))
+* add go-mod ([f53aa13](https://github.com/thisthat/open-feature-operator/commit/f53aa1303a481f549dc6d0df351983644c878650))
+
 ## [0.2.39](https://github.com/thisthat/open-feature-operator/compare/apis-v0.2.38...apis/v0.2.39) (2023-11-14)
 
 

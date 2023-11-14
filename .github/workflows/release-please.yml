@@ -39,8 +39,8 @@ jobs:
       - name: prepare-release
         id: prepare
         env:
-          API_TAG: ${{ steps.release.outputs.apis--tag_name }}"
-          OP_TAG: ${{ steps.release.outputs.operator--tag_name }}"
+          API_TAG: ${{ steps.release.outputs.apis--tag_name }}
+          OP_TAG: ${{ steps.release.outputs.operator--tag_name }}
         run: |
           release_apis=true
           release_operator=true

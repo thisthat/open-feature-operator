@@ -37,10 +37,12 @@ jobs:
           token: ${{secrets.GITHUB_TOKEN}}
           default-branch: main
       - name: Debug
+        env:
+          INFO: ${{ toJSON(steps.release.outputs) }}
         run: |
           echo "Path released: ${{ steps.release.outputs.paths_released }}"
           echo "Tag name APIs: ${{ steps.release.outputs.apis--tag_name }}"
-          echo "Outputs: ${{ steps.release.outputs }}"
+          echo "Outputs: ${FULL_RELEASE_OUTPUT}"
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
       release_tag_name: ${{ steps.release.outputs.tag_name }}

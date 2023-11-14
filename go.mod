@@ -1,4 +1,4 @@
-module github.com/open-feature/open-feature-operator
+module github.com/thisthat/open-feature-operator
 
 go 1.19
 

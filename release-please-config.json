@@ -4,8 +4,8 @@
   "last-release-sha": "e5445ae5f41c29a5a62503438d86dcddf2c59617",
   "packages": {
     "apis": {
-      "package-name": "apis",
       "release-type": "go",
+      "package-name": "apis",
       "monorepo-tags": "apis",
       "draft": false,
       "prerelease": false,

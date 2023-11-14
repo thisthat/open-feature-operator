@@ -19,9 +19,9 @@ package v1alpha2
 import (
 	"fmt"
 
-	"github.com/open-feature/open-feature-operator/apis/core/v1alpha1"
-	"github.com/open-feature/open-feature-operator/apis/core/v1alpha2/common"
-	"github.com/open-feature/open-feature-operator/pkg/utils"
+	"github.com/thisthat/open-feature-operator/apis/core/v1alpha1"
+	"github.com/thisthat/open-feature-operator/apis/core/v1alpha2/common"
+	"github.com/thisthat/open-feature-operator/pkg/utils"
 	"sigs.k8s.io/controller-runtime/pkg/conversion"
 )
 

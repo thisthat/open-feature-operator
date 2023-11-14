@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/open-feature/open-feature-operator/apis/core/v1alpha1"
-	"github.com/open-feature/open-feature-operator/controllers/common"
 	"github.com/stretchr/testify/require"
+	"github.com/thisthat/open-feature-operator/apis/core/v1alpha1"
+	"github.com/thisthat/open-feature-operator/controllers/common"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

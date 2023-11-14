@@ -11,10 +11,10 @@ import (
 	"time"
 
 	"github.com/go-logr/logr"
-	"github.com/open-feature/open-feature-operator/apis/core/v1alpha1"
-	controllercommon "github.com/open-feature/open-feature-operator/controllers/common"
-	"github.com/open-feature/open-feature-operator/controllers/common/constant"
-	"github.com/open-feature/open-feature-operator/pkg/utils"
+	"github.com/thisthat/open-feature-operator/apis/core/v1alpha1"
+	controllercommon "github.com/thisthat/open-feature-operator/controllers/common"
+	"github.com/thisthat/open-feature-operator/controllers/common/constant"
+	"github.com/thisthat/open-feature-operator/pkg/utils"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
 	"sigs.k8s.io/controller-runtime/pkg/cache"
@@ -159,7 +159,7 @@ func (m *PodMutator) createFSConfigSpec(ctx context.Context, req admission.Reque
 	ffConfigAnnotation, ffConfigAnnotationOk := pod.GetAnnotations()[fmt.Sprintf("%s/%s", OpenFeatureAnnotationPrefix, FeatureFlagConfigurationAnnotation)]
 	if ffConfigAnnotationOk {
 		m.Log.V(1).Info("DEPRECATED: The openfeature.dev/featureflagconfiguration annotation has been superseded by the openfeature.dev/flagsourceconfiguration annotation. " +
-			"Docs: https://github.com/open-feature/open-feature-operator/blob/main/docs/annotations.md")
+			"Docs: https://github.com/thisthat/open-feature-operator/blob/main/docs/annotations.md")
 		if err := m.handleFeatureFlagConfigurationAnnotation(ctx, flagSourceConfigurationSpec, ffConfigAnnotation, req.Namespace); err != nil {
 			m.Log.Error(err, "unable to handle openfeature.dev/featureflagconfiguration annotation")
 			return nil, http.StatusInternalServerError, err
@@ -172,7 +172,7 @@ func (m *PodMutator) checkOFEnabled(annotations map[string]string) bool {
 	val, ok := annotations[OpenFeatureAnnotationPrefix]
 	if ok {
 		m.Log.V(1).Info("DEPRECATED: The openfeature.dev annotation has been superseded by the openfeature.dev/enabled annotation. " +
-			"Docs: https://github.com/open-feature/open-feature-operator/blob/main/docs/annotations.md")
+			"Docs: https://github.com/thisthat/open-feature-operator/blob/main/docs/annotations.md")
 		if val == "enabled" {
 			return true
 		}

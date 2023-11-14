@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"reflect"
 
-	v1alpha1 "github.com/open-feature/open-feature-operator/apis/core/v1alpha1"
-	"github.com/open-feature/open-feature-operator/pkg/utils"
+	v1alpha1 "github.com/thisthat/open-feature-operator/apis/core/v1alpha1"
+	"github.com/thisthat/open-feature-operator/pkg/utils"
 )
 
 //nolint:gocyclo

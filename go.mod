@@ -7,6 +7,7 @@ require (
 	github.com/go-logr/logr v1.2.4
 	github.com/golang/mock v1.4.4
 	github.com/open-feature/schemas v0.2.8
+	github.com/thisthat/open-feature-operator/api v0.2.39
 	github.com/stretchr/testify v1.8.4
 	github.com/xeipuuv/gojsonschema v1.2.0
 	go.uber.org/zap v1.24.0

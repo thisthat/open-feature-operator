@@ -2,7 +2,7 @@ package v1beta1
 
 type SyncProviderType string
 
-// comment
+// comment duplicate
 const (
 	SyncProviderKubernetes SyncProviderType = "kubernetes"
 	SyncProviderFilepath   SyncProviderType = "file"

@@ -40,6 +40,7 @@ jobs:
         run: |
           echo "Path released: ${{ steps.release.outputs.paths_released }}"
           echo "Tag name APIs: ${{ steps.release.outputs.apis--tag_name }}"
+          echo "Outputs: ${{ steps.release.outputs }}"
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
       release_tag_name: ${{ steps.release.outputs.tag_name }}

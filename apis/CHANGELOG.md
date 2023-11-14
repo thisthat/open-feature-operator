@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.39](https://github.com/thisthat/open-feature-operator/compare/apis-v0.2.38...apis/v0.2.39) (2023-11-14)
+
+
+### ✨ New Features
+
+* add comment ([851ec96](https://github.com/thisthat/open-feature-operator/commit/851ec96a52a0a87851f9b48baaa74d8e796e2f6e))
+
 ## [0.2.38](https://github.com/thisthat/open-feature-operator/compare/apis-v0.2.37...apis-v0.2.38) (2023-11-14)
 
 

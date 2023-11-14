@@ -1,20 +1,22 @@
 {
   "separate-pull-requests": true,
   "pull-request-title-pattern": "chore: release${component} ${version}",
-  "bootstrap-sha": "7d099c7b72f9a7430581696218458eaee31fb0df",
+  "last-release-sha": "e5445ae5f41c29a5a62503438d86dcddf2c59617",
   "packages": {
     "apis": {
       "package-name": "apis",
       "release-type": "go",
       "monorepo-tags": "apis",
-      "prerelease": false,
       "draft": false,
+      "prerelease": false,
       "bump-minor-pre-major": true,
       "bump-patch-for-minor-pre-major": true,
       "extra-files": []
     },
     ".": {
       "release-type": "go",
+      "package-name": "operator",
+      "monorepo-tags": "operator",
       "prerelease": false,
       "bump-minor-pre-major": true,
       "bump-patch-for-minor-pre-major": true,
@@ -27,7 +29,7 @@
         "docs/quick_start.md",
         "docs/installation.md"
       ],
-       "changelog-sections": [
+      "changelog-sections": [
         {
           "type": "feat",
           "section": "✨ New Features"

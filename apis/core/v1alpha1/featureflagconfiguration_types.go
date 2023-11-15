@@ -17,7 +17,7 @@ limitations under the License.
 package v1alpha1
 
 import (
-	"github.com/open-feature/open-feature-operator/apis/core/v1alpha1/common"
+	"github.com/thisthat/open-feature-operator/apis/core/v1alpha1/common"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

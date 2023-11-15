@@ -18,7 +18,7 @@ package v1alpha1
 
 import (
 	"fmt"
-	"github.com/open-feature/open-feature-operator/apis/core/v1alpha1/common"
+	"github.com/thisthat/open-feature-operator/apis/core/v1alpha1/common"
 	"os"
 	"strconv"
 	"strings"

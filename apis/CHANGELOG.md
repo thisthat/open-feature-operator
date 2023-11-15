@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.3.0](https://github.com/thisthat/open-feature-operator/compare/apis/v0.2.40...apis/v0.3.0) (2023-11-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove comment
+
+### ✨ New Features
+
+* add apis ([c86ed08](https://github.com/thisthat/open-feature-operator/commit/c86ed0877b514cf4e820cbafdb6b713e0ac13b10))
+
+
+### 🧹 Chore
+
+* remove comment ([e68c80c](https://github.com/thisthat/open-feature-operator/commit/e68c80c98d60d45d6cd8ee6c7962b1c34f1e70d6))
+
 ## [0.2.40](https://github.com/thisthat/open-feature-operator/compare/apis/v0.2.39...apis/v0.2.40) (2023-11-14)
 
 

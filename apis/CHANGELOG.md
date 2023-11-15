@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/thisthat/open-feature-operator/compare/apis/v0.3.0...apis/v0.3.1) (2023-11-15)
+
+
+### 🧹 Chore
+
+* rename apis ([6a838bc](https://github.com/thisthat/open-feature-operator/commit/6a838bcb94031bdea85b19b5b9aaedb5f24f5f27))
+
 ## [0.3.0](https://github.com/thisthat/open-feature-operator/compare/apis/v0.2.40...apis/v0.3.0) (2023-11-15)
 
 

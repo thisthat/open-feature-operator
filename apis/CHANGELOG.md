@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3](https://github.com/thisthat/open-feature-operator/compare/apis/v0.3.2...apis/v0.3.3) (2023-11-15)
+
+
+### 🧹 Chore
+
+* fix apis versions ([f728d3e](https://github.com/thisthat/open-feature-operator/commit/f728d3eea634c935486b85191b34f67f50ec218e))
+
 ## [0.3.2](https://github.com/thisthat/open-feature-operator/compare/apis/v0.3.1...apis/v0.3.2) (2023-11-15)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/thisthat/open-feature-operator/compare/apis/v0.3.1...apis/v0.3.2) (2023-11-15)
+
+
+### 🧹 Chore
+
+* go mod ([03e7031](https://github.com/thisthat/open-feature-operator/commit/03e703160cf37e879ab149e732023a44eb436541))
+
 ## [0.3.1](https://github.com/thisthat/open-feature-operator/compare/apis/v0.3.0...apis/v0.3.1) (2023-11-15)
 
 

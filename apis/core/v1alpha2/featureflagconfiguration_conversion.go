@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/open-feature/open-feature-operator/apis/core/v1alpha1"
-	"github.com/open-feature/open-feature-operator/apis/core/v1alpha2/common"
+	"github.com/thisthat/open-feature-operator/apis/core/v1alpha1"
+	"github.com/thisthat/open-feature-operator/apis/core/v1alpha2/common"
 	"sigs.k8s.io/controller-runtime/pkg/conversion"
 )
 

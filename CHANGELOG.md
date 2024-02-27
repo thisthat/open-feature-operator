@@ -1,5 +1,79 @@
 # Changelog
 
+## [0.6.0](https://github.com/thisthat/open-feature-operator/compare/v0.5.4...v0.6.0) (2024-02-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* use v1beta1 in operator logic ([#539](https://github.com/thisthat/open-feature-operator/issues/539))
+
+### ✨ New Features
+
+* auto-upgrade flagd-proxy with OFO upgrades ([#596](https://github.com/thisthat/open-feature-operator/issues/596)) ([3271f33](https://github.com/thisthat/open-feature-operator/commit/3271f33623518408b0055b808c22434a46462a05))
+* Introduce v1beta1 API version ([#535](https://github.com/thisthat/open-feature-operator/issues/535)) ([3acd492](https://github.com/thisthat/open-feature-operator/commit/3acd49289a40e8f07fd20aad46185ac42ceb1b7a))
+* prepare apis for v1beta1 controllers onboarding ([#549](https://github.com/thisthat/open-feature-operator/issues/549)) ([e3c8b42](https://github.com/thisthat/open-feature-operator/commit/e3c8b4290be99d78b88ffef686531a38b97e61be))
+* release APIs and Operator independently ([#541](https://github.com/thisthat/open-feature-operator/issues/541)) ([7b1af42](https://github.com/thisthat/open-feature-operator/commit/7b1af42ac41e63ccbb1820b31f579ffea679cff6))
+* restricting sidecar image and tag setup ([#550](https://github.com/thisthat/open-feature-operator/issues/550)) ([233be79](https://github.com/thisthat/open-feature-operator/commit/233be79b56ccca32a1cb041bce53a9848f032a60))
+* update api version to v0.2.38 ([#561](https://github.com/thisthat/open-feature-operator/issues/561)) ([d1f2477](https://github.com/thisthat/open-feature-operator/commit/d1f247727c5b6f4cb5154e94f1090aee0a442346))
+* use v1beta1 in operator logic ([#539](https://github.com/thisthat/open-feature-operator/issues/539)) ([d234410](https://github.com/thisthat/open-feature-operator/commit/d234410a809760ba1c8592f95be56891e0cae855))
+
+
+### 🐛 Bug Fixes
+
+* bump flagd and flagd proxy version ([#577](https://github.com/thisthat/open-feature-operator/issues/577)) ([5d8c829](https://github.com/thisthat/open-feature-operator/commit/5d8c8299bc3030a2b14baaa6a0fb5b4f6f0d47ea))
+* create index for pod annotation path for allowkubernetessync annotation instead of deployment ([#582](https://github.com/thisthat/open-feature-operator/issues/582)) ([a6fa04f](https://github.com/thisthat/open-feature-operator/commit/a6fa04f590ad4ad6779ce85f4fc167b59f1b17a7))
+* fix build ([#566](https://github.com/thisthat/open-feature-operator/issues/566)) ([c8c6101](https://github.com/thisthat/open-feature-operator/commit/c8c61019266dc3fc379759bc22a9360279ee194a))
+* flagd mgmt port setting ignored ([#588](https://github.com/thisthat/open-feature-operator/issues/588)) ([1444328](https://github.com/thisthat/open-feature-operator/commit/1444328691450ee3967d862eebf3a293b4f9fe7c))
+* Revert "chore: release apis 0.2.38" ([#557](https://github.com/thisthat/open-feature-operator/issues/557)) ([ccb8c1d](https://github.com/thisthat/open-feature-operator/commit/ccb8c1d6e12aa36e33239fd96bebbc57fc4ea3bc))
+* Revert "feat: update api version to v0.2.38" ([#562](https://github.com/thisthat/open-feature-operator/issues/562)) ([e231787](https://github.com/thisthat/open-feature-operator/commit/e2317877451163b70d0fe8fb073937d3c7586b31))
+* use webhook ns if empty, more test versions ([#568](https://github.com/thisthat/open-feature-operator/issues/568)) ([b9b619d](https://github.com/thisthat/open-feature-operator/commit/b9b619dcd5133a48ca1248eba14419a30922e961))
+
+
+### 🧹 Chore
+
+* add default timeout to make ([#593](https://github.com/thisthat/open-feature-operator/issues/593)) ([a5dfbe1](https://github.com/thisthat/open-feature-operator/commit/a5dfbe1aa24e17bd21fe4c5073e0cd40f11b6203))
+* add helm migration section ([#573](https://github.com/thisthat/open-feature-operator/issues/573)) ([361d068](https://github.com/thisthat/open-feature-operator/commit/361d068a46d8d6ca5c96aa0889cdbe1ac53d538b))
+* add link to tutorial in README ([#594](https://github.com/thisthat/open-feature-operator/issues/594)) ([f3f9427](https://github.com/thisthat/open-feature-operator/commit/f3f9427287199e28d3e11313bad616f0e781048b))
+* bump go to 1.21 ([#604](https://github.com/thisthat/open-feature-operator/issues/604)) ([73d6319](https://github.com/thisthat/open-feature-operator/commit/73d6319820220fc114cdfc7d72f8c2327a35ec37))
+* clean up unused API code after moving to v1beta1 ([#543](https://github.com/thisthat/open-feature-operator/issues/543)) ([1287b07](https://github.com/thisthat/open-feature-operator/commit/1287b0785fd99cb8bfeaf9fe112aa8a0ed6f5cf9))
+* **deps:** update actions/cache action to v4 ([#602](https://github.com/thisthat/open-feature-operator/issues/602)) ([e4476e2](https://github.com/thisthat/open-feature-operator/commit/e4476e2e5d2e2178ef280e6da324590115b80cb6))
+* **deps:** update actions/checkout action to v4 ([#603](https://github.com/thisthat/open-feature-operator/issues/603)) ([4eda2ca](https://github.com/thisthat/open-feature-operator/commit/4eda2ca837c7a8c967d53d4902ed223cbc7e1a6e))
+* **deps:** update actions/setup-node action to v3.8.1 ([#522](https://github.com/thisthat/open-feature-operator/issues/522)) ([32ddf00](https://github.com/thisthat/open-feature-operator/commit/32ddf002e6c20732d990283946ec124304827bd3))
+* **deps:** update curlimages/curl docker tag to v8.6.0 ([#599](https://github.com/thisthat/open-feature-operator/issues/599)) ([2b9d63a](https://github.com/thisthat/open-feature-operator/commit/2b9d63a6dbde5a716dc2e472e65b55ba36085c40))
+* **deps:** update dependency bitnami-labs/readme-generator-for-helm to v2.6.0 ([#525](https://github.com/thisthat/open-feature-operator/issues/525)) ([70fb5d9](https://github.com/thisthat/open-feature-operator/commit/70fb5d95497346dac9f83058105de4d828d75c96))
+* **deps:** update docker/metadata-action digest to 31cebac ([#520](https://github.com/thisthat/open-feature-operator/issues/520)) ([5262fa7](https://github.com/thisthat/open-feature-operator/commit/5262fa7dc15458330cdc13c277a7b0a115199326))
+* **deps:** update helm/kind-action action to v1.9.0 ([#608](https://github.com/thisthat/open-feature-operator/issues/608)) ([8800728](https://github.com/thisthat/open-feature-operator/commit/8800728e14998b88a7f2b86977d980a3200e4e1d))
+* **deps:** update open-feature/flagd ([#600](https://github.com/thisthat/open-feature-operator/issues/600)) ([0e03f47](https://github.com/thisthat/open-feature-operator/commit/0e03f47c295592fd9eb94185b1a8d69c5fe52559))
+* fix file source documentation ([#556](https://github.com/thisthat/open-feature-operator/issues/556)) ([318c52d](https://github.com/thisthat/open-feature-operator/commit/318c52d2ba38dbfee6deb3f06d3392dc14d80a6c))
+* ignore component for release tag and make release dependable ([#564](https://github.com/thisthat/open-feature-operator/issues/564)) ([5ac4be3](https://github.com/thisthat/open-feature-operator/commit/5ac4be3a24f73f1b66346840a3084f1ff5030627))
+* migration docs ([#571](https://github.com/thisthat/open-feature-operator/issues/571)) ([8bf9e42](https://github.com/thisthat/open-feature-operator/commit/8bf9e42fbc8300d614b398e0b91146082a66abba))
+* refactor code to decrease complexity ([#554](https://github.com/thisthat/open-feature-operator/issues/554)) ([17a547f](https://github.com/thisthat/open-feature-operator/commit/17a547f88595cb6c177ca93e1a8b4ad49f3c1a5f))
+* regex to match all go files ([#607](https://github.com/thisthat/open-feature-operator/issues/607)) ([a1fc38a](https://github.com/thisthat/open-feature-operator/commit/a1fc38a4186f297712ee077780a1c372026e58fb))
+* release 0.4.0 ([#563](https://github.com/thisthat/open-feature-operator/issues/563)) ([e32a872](https://github.com/thisthat/open-feature-operator/commit/e32a8724c9a0bbcb5226b16cd36d065ee358cd2d))
+* release 0.5.0 ([#567](https://github.com/thisthat/open-feature-operator/issues/567)) ([4c0fe34](https://github.com/thisthat/open-feature-operator/commit/4c0fe34fee0ed4b38bea8fab6bf39d4ef95e4d44))
+* release 0.5.1 ([#570](https://github.com/thisthat/open-feature-operator/issues/570)) ([f239a25](https://github.com/thisthat/open-feature-operator/commit/f239a25db212b65fc78d82b5fda20edf7f40feac))
+* release 0.5.2 ([#572](https://github.com/thisthat/open-feature-operator/issues/572)) ([370db50](https://github.com/thisthat/open-feature-operator/commit/370db505566fbbe7b57e8dc6d8e957342daab756))
+* release 0.5.3 ([#581](https://github.com/thisthat/open-feature-operator/issues/581)) ([0affaa5](https://github.com/thisthat/open-feature-operator/commit/0affaa5968e3da7f35f3e1811a9bd1e2dbf5a7da))
+* release 0.5.4 ([#595](https://github.com/thisthat/open-feature-operator/issues/595)) ([04c0a2c](https://github.com/thisthat/open-feature-operator/commit/04c0a2ca71d16de44a979bb27a025dfdbeb7173c))
+* release apis 0.2.37 ([#544](https://github.com/thisthat/open-feature-operator/issues/544)) ([854e72d](https://github.com/thisthat/open-feature-operator/commit/854e72d964fce51082220a60fc8a7319676e49c3))
+* release apis 0.2.38 ([#548](https://github.com/thisthat/open-feature-operator/issues/548)) ([c6165d4](https://github.com/thisthat/open-feature-operator/commit/c6165d426b5be2af89e03695d24fe0b802fb1fe2))
+* release apis 0.2.38 ([#558](https://github.com/thisthat/open-feature-operator/issues/558)) ([4ecbc9b](https://github.com/thisthat/open-feature-operator/commit/4ecbc9b8eeac4e1e86c0f4e11ffedf3dbc376f9a))
+* release apis 0.2.38 ([#560](https://github.com/thisthat/open-feature-operator/issues/560)) ([069e275](https://github.com/thisthat/open-feature-operator/commit/069e2754210d1a71bc5b70c0d4e6e193f62a7bcb))
+* release apis 0.2.39 ([#590](https://github.com/thisthat/open-feature-operator/issues/590)) ([c53a72b](https://github.com/thisthat/open-feature-operator/commit/c53a72b0d4f0ecbb6f839ae1af54621f4c152f42))
+* release operator 0.3.0 ([#545](https://github.com/thisthat/open-feature-operator/issues/545)) ([002f2dd](https://github.com/thisthat/open-feature-operator/commit/002f2ddec77a2caf919280fb9bfe74ab092c27a5))
+* Remove metrics-port flag/usage from flagdproxy startup ([#587](https://github.com/thisthat/open-feature-operator/issues/587)) ([f79c46f](https://github.com/thisthat/open-feature-operator/commit/f79c46f36cfda1134c523e962925cfdfd0d2b0b3))
+* revert recent release ([#559](https://github.com/thisthat/open-feature-operator/issues/559)) ([f7c79e4](https://github.com/thisthat/open-feature-operator/commit/f7c79e4c6f5a5dee05d7db1796bfb9891dbd53a0))
+* update `FeatureFlagSource` documentation for v1beta1 ([#584](https://github.com/thisthat/open-feature-operator/issues/584)) ([5a7b2c6](https://github.com/thisthat/open-feature-operator/commit/5a7b2c6be1d38fe344c98f0e7d816852e9eb744f))
+* update readme tag version ([#592](https://github.com/thisthat/open-feature-operator/issues/592)) ([f6a154d](https://github.com/thisthat/open-feature-operator/commit/f6a154d92a6ed0633761523b5cb43606604a48a1))
+* use apis tag instead of local replace ([#546](https://github.com/thisthat/open-feature-operator/issues/546)) ([1856918](https://github.com/thisthat/open-feature-operator/commit/18569182c1f2eca3e29e9428a64239ac16ea3c08))
+* use github-action for golangci-lint workflow ([#538](https://github.com/thisthat/open-feature-operator/issues/538)) ([a97d336](https://github.com/thisthat/open-feature-operator/commit/a97d336468d5a9b50662f4979784c8388ec10ec1))
+
+
+### 📚 Documentation
+
+* fix link to the flagd flag definition ([ffc6cec](https://github.com/thisthat/open-feature-operator/commit/ffc6cec3b19d6d59f103c8d6083836bafa14c352))
+* use v1beta1 API version ([#553](https://github.com/thisthat/open-feature-operator/issues/553)) ([ccc0471](https://github.com/thisthat/open-feature-operator/commit/ccc0471c15cb42a338cd4c1a69b0b1f7c7828837))
+
 ## [0.5.4](https://github.com/open-feature/open-feature-operator/compare/v0.5.3...v0.5.4) (2024-02-21)
 
 
